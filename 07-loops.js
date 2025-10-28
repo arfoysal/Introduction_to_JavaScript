@@ -19,7 +19,7 @@ alert("Login Successful")
 
 
 let factorial = 1;
-let number = 5;
+let number = 6;
 let original = number;
 do {
     factorial = factorial * number;

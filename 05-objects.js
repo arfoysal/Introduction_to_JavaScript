@@ -1,3 +1,25 @@
+
+// Using Objects to Store Test Results
+const result ={
+    homepage: "passed",
+    login: "failed",
+    payment: "failed",
+    signup: "passed"
+}
+
+let failedTests = [];
+// Iterate over the result object to find failed tests
+for (let test in result){
+    if (result[test] === "failed"){
+        failedTests.push(test);
+    }
+}
+console.log("++++++++++++++++++++")
+console.log(failedTests);
+console.log("++++++++++++++++++++")
+
+
+// Object Literal
 const cookie = {
     name: "Chocolate Chip",
     isGlutenFree: false,
@@ -6,7 +28,10 @@ const cookie = {
         console.log("I am eating " + this.name);
     }
 };
+
 console.log(cookie);
+console.log(typeof cookie);
+console.log("++++++++++++++++++++")
 console.log(cookie.name);
 cookie.name = "Chip Chocolate";
 console.log(cookie.name);

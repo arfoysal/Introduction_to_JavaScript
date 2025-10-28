@@ -12,13 +12,14 @@ const car = {
     color: "red",
     numDoors: 4
 };
-
+// Using logical AND (&&) operator
 if (car.price < 2000 && car.color === "red" && car.numDoors === 4) {
     console.log("We'll take it!");
 } else {
     console.log("Welp, it's best to keep looking");
 }
 
+// Using logical OR (||) operator
 const bike = {
     price: 1000,
     color: "red",
@@ -29,6 +30,8 @@ if (bike.price < 1000 || bike.color === "red") {
 } else {
     console.log("Welp, it's best to keep looking");
 }
+
+// Combining AND and OR operators
 
 if (car.price < 2000 || (car.color === "red" && car.numDoors === 4)) {
     console.log("We'll take it!");
